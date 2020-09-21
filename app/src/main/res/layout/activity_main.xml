@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    tools:context="com.varlor.dictionarydemo.MainActivity">
+    <!--输入要翻译的单词-->
+    <EditText
+        android:id="@+id/search_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:background="@null"
+        android:hint="在此输入要翻译的单词"
+        android:paddingLeft="20dp" />
+    <!--查询按钮-->
+    <ImageButton
+        android:id="@+id/search_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:background="#0000"
+        android:gravity="bottom"
+        android:paddingRight="10dp"
+        android:src="@drawable/btn1"
+        android:text="查询单词" />
+    <!--显示结果的ListView-->
+    <ListView
+        android:id="@+id/result_listView"
+        android:layout_width="300dp"
+        android:layout_height="110dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="70dp">
+
+    </ListView>
+    <!--添加生词的按钮-->
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="350dp"
+        android:background="@drawable/add" />
+</RelativeLayout>
